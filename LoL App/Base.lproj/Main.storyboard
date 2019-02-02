@@ -33,17 +33,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r0-tX-n1m">
+                            <button clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r0-tX-n1m">
                                 <rect key="frame" x="125" y="357" width="124" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <rect key="contentStretch" x="0.59999999999999998" y="0.0" width="1" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="contentStretch" x="0.25" y="0.0" width="1" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6gN-IT-ukl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <size key="titleShadowOffset" width="-1" height="0.0"/>
                                 <state key="normal" title="Play Game">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -55,8 +55,8 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="XnC-fR-g8x"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="League of Laughs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZz-tz-SFu">
-                                <rect key="frame" x="10" y="103" width="349" height="146"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="League of Laughs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZz-tz-SFu">
+                                <rect key="frame" x="16" y="103" width="349" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="146" id="pjV-ob-eR5"/>
                                 </constraints>
@@ -64,8 +64,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="md_5ab0afa3d705a.png" translatesAutoresizingMaskIntoConstraints="NO" id="XVU-zW-Qob">
+                                <rect key="frame" x="0.0" y="552" width="459" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rZz-tz-SFu" firstAttribute="top" secondItem="fRT-uB-Ae5" secondAttribute="top" constant="83" id="4LK-jY-eei"/>
                             <constraint firstItem="fRT-uB-Ae5" firstAttribute="bottom" secondItem="4r0-tX-n1m" secondAttribute="bottom" constant="280" id="9Ir-xv-Cho"/>
@@ -110,20 +114,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmK-T9-5ae">
-                                <rect key="frame" x="125" y="541" width="124" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmK-T9-5ae">
+                                <rect key="frame" x="125" y="503" width="124" height="33"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="contentStretch" x="0.34999999999999998" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
                                 <state key="normal" title="Join">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="QPb-qo-vTG" kind="presentation" id="lfb-3w-hDR"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="md_5ab0afa3d705a.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Kd-oe-w6j">
+                                <rect key="frame" x="-11" y="0.0" width="459" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Q4B-1g-bQp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="10p-GN-ZKf"/>
                             <constraint firstItem="fmK-T9-5ae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Vv-dq-1wQ"/>
@@ -161,8 +171,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="md_5ab0afa3d705a.png" translatesAutoresizingMaskIntoConstraints="NO" id="s0c-iA-MfM">
+                                <rect key="frame" x="0.0" y="552" width="459" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Vs9-9N-4Sa" firstAttribute="top" secondItem="gQb-8B-c7m" secondAttribute="top" constant="97" id="3ek-Fg-9TI"/>
                             <constraint firstItem="Vs9-9N-4Sa" firstAttribute="centerX" secondItem="WsY-Dy-ssn" secondAttribute="centerX" id="HyQ-yz-8y9"/>
@@ -182,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="917.60000000000002" y="133.5832083958021"/>
         </scene>
-        <!--Page2 View Controller-->
+        <!--Page3 Table View Controller-->
         <scene sceneID="5Mf-Vc-S1U">
             <objects>
-                <viewController id="ycl-CQ-m21" customClass="Page2ViewController" customModule="LoL_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ycl-CQ-m21" customClass="Page3TableViewController" customModule="LoL_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LGP-y6-Bf5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,7 +208,7 @@
                                 <rect key="frame" x="67" y="172" width="240" height="128"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sRf-u5-g1N" firstAttribute="bottom" secondItem="po0-R3-vRp" secondAttribute="bottom" constant="367" id="H1e-89-pH8"/>
                             <constraint firstItem="po0-R3-vRp" firstAttribute="top" secondItem="sRf-u5-g1N" secondAttribute="top" constant="152" id="UzV-hT-SE5"/>
@@ -209,5 +223,8 @@
             <point key="canvasLocation" x="1625" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="md_5ab0afa3d705a.png" width="640" height="640"/>
+    </resources>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
