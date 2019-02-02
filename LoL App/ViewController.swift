@@ -9,12 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var nameTextBox: UITextField!
+    
+    @IBOutlet var submitButton: UIButton!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        nameTextBox.widthAnchor.constraint(equalToConstant: 200.0).isActive = true
+        submitButton.layer.cornerRadius = 8
+        submitButton.widthAnchor.constraint(equalToConstant: 150.0).isActive = true
+        submitButton.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
 
+        
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 
 }
 
