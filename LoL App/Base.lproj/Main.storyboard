@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PZs-Q9-wYj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,6 +11,86 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="q1E-nh-A1p">
+            <objects>
+                <viewController id="PZs-Q9-wYj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m9t-Ft-kec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMS-g2-bdd">
+                                <rect key="frame" x="74" y="323" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzn-Ye-OMl">
+                                <rect key="frame" x="50" y="47" width="274" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="ouU-x0-e9v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4r0-tX-n1m">
+                                <rect key="frame" x="125" y="357" width="124" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.59999999999999998" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6gN-IT-ukl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <size key="titleShadowOffset" width="-1" height="0.0"/>
+                                <state key="normal" title="Play Game">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="XnC-fR-g8x"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="League of Laughs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZz-tz-SFu">
+                                <rect key="frame" x="10" y="103" width="349" height="146"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="pjV-ob-eR5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rZz-tz-SFu" firstAttribute="top" secondItem="fRT-uB-Ae5" secondAttribute="top" constant="83" id="4LK-jY-eei"/>
+                            <constraint firstItem="fRT-uB-Ae5" firstAttribute="bottom" secondItem="4r0-tX-n1m" secondAttribute="bottom" constant="280" id="9Ir-xv-Cho"/>
+                            <constraint firstItem="MMS-g2-bdd" firstAttribute="top" secondItem="m9t-Ft-kec" secondAttribute="top" constant="323" id="QWN-eJ-J24"/>
+                            <constraint firstItem="MMS-g2-bdd" firstAttribute="leading" secondItem="m9t-Ft-kec" secondAttribute="leadingMargin" constant="58" id="RKd-3Y-EJ8"/>
+                            <constraint firstItem="rZz-tz-SFu" firstAttribute="trailing" secondItem="m9t-Ft-kec" secondAttribute="trailingMargin" id="RXW-Pe-hvH"/>
+                            <constraint firstItem="Rzn-Ye-OMl" firstAttribute="centerX" secondItem="m9t-Ft-kec" secondAttribute="centerX" id="ZBQ-Th-Th5"/>
+                            <constraint firstItem="4r0-tX-n1m" firstAttribute="leading" secondItem="fRT-uB-Ae5" secondAttribute="leading" constant="125" id="aOZ-bA-WlG"/>
+                            <constraint firstItem="Rzn-Ye-OMl" firstAttribute="centerX" secondItem="4r0-tX-n1m" secondAttribute="centerX" id="bih-UQ-pmM"/>
+                            <constraint firstItem="Rzn-Ye-OMl" firstAttribute="leading" secondItem="fRT-uB-Ae5" secondAttribute="leading" constant="50" id="cP5-0S-eBe"/>
+                            <constraint firstItem="Rzn-Ye-OMl" firstAttribute="top" secondItem="fRT-uB-Ae5" secondAttribute="top" constant="27" id="m3A-MD-BQ0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fRT-uB-Ae5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xod-wu-4H4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-610.39999999999998" y="139.880059970015"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoL_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,14 +99,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="boS-FY-hPk">
-                                <rect key="frame" x="175" y="288" width="25" height="30"/>
+                                <rect key="frame" x="175" y="284.5" width="25" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4B-1g-bQp">
-                                <rect key="frame" x="78" y="210" width="219.5" height="48"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
+                                <rect key="frame" x="58" y="210" width="259" height="44.5"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -38,12 +118,16 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="QPb-qo-vTG" kind="presentation" id="lfb-3w-hDR"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Q4B-1g-bQp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="10p-GN-ZKf"/>
                             <constraint firstItem="fmK-T9-5ae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Vv-dq-1wQ"/>
+                            <constraint firstItem="fmK-T9-5ae" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="MjG-7n-sO0"/>
                             <constraint firstItem="boS-FY-hPk" firstAttribute="top" secondItem="Q4B-1g-bQp" secondAttribute="bottom" constant="30" id="YFu-71-IBd"/>
                             <constraint firstItem="Q4B-1g-bQp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="e8X-YK-LiT"/>
                             <constraint firstItem="fmK-T9-5ae" firstAttribute="top" secondItem="boS-FY-hPk" secondAttribute="bottom" constant="230" id="p7O-kq-FLF"/>
@@ -60,44 +144,63 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Page2 View Controller-->
         <scene sceneID="dV8-n5-llg">
             <objects>
-                <viewController id="QPb-qo-vTG" sceneMemberID="viewController">
+                <viewController id="QPb-qo-vTG" customClass="Page2ViewController" customModule="LoL_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WsY-Dy-ssn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waiting for other meme lords" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs9-9N-4Sa">
-                                <rect key="frame" x="57" y="85" width="260" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="29"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="y9c-Ao-mhw">
+                                <rect key="frame" x="177" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Waiting for other meme lords ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs9-9N-4Sa">
+                                <rect key="frame" x="36" y="94" width="302" height="107"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vs9-9N-4Sa" firstAttribute="top" secondItem="gQb-8B-c7m" secondAttribute="top" constant="97" id="3ek-Fg-9TI"/>
+                            <constraint firstItem="Vs9-9N-4Sa" firstAttribute="centerX" secondItem="WsY-Dy-ssn" secondAttribute="centerX" id="HyQ-yz-8y9"/>
+                            <constraint firstItem="Vs9-9N-4Sa" firstAttribute="centerX" secondItem="y9c-Ao-mhw" secondAttribute="centerX" id="Zsl-yT-HXY"/>
+                            <constraint firstItem="Vs9-9N-4Sa" firstAttribute="leading" secondItem="gQb-8B-c7m" secondAttribute="leading" constant="57" id="gAS-Fq-g5l"/>
+                            <constraint firstItem="y9c-Ao-mhw" firstAttribute="top" secondItem="Vs9-9N-4Sa" secondAttribute="bottom" constant="66" id="jIY-Po-led"/>
+                            <constraint firstItem="gQb-8B-c7m" firstAttribute="bottom" secondItem="y9c-Ao-mhw" secondAttribute="bottom" constant="357" id="jV4-dk-hBj"/>
+                            <constraint firstItem="y9c-Ao-mhw" firstAttribute="leading" secondItem="gQb-8B-c7m" secondAttribute="leading" constant="177" id="s4J-ga-CZL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gQb-8B-c7m"/>
                     </view>
+                    <connections>
+                        <outlet property="Spinner" destination="y9c-Ao-mhw" id="IQT-VQ-nRl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpV-Dj-iQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="917.60000000000002" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Page2 View Controller-->
         <scene sceneID="5Mf-Vc-S1U">
             <objects>
-                <viewController id="ycl-CQ-m21" sceneMemberID="viewController">
+                <viewController id="ycl-CQ-m21" customClass="Page2ViewController" customModule="LoL_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LGP-y6-Bf5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="po0-R3-vRp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="po0-R3-vRp">
                                 <rect key="frame" x="67" y="172" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sRf-u5-g1N" firstAttribute="bottom" secondItem="po0-R3-vRp" secondAttribute="bottom" constant="367" id="H1e-89-pH8"/>
+                            <constraint firstItem="po0-R3-vRp" firstAttribute="top" secondItem="sRf-u5-g1N" secondAttribute="top" constant="152" id="UzV-hT-SE5"/>
+                            <constraint firstItem="po0-R3-vRp" firstAttribute="centerX" secondItem="LGP-y6-Bf5" secondAttribute="centerX" id="fkQ-sk-q8h"/>
+                            <constraint firstItem="po0-R3-vRp" firstAttribute="leading" secondItem="sRf-u5-g1N" secondAttribute="leading" constant="67" id="vac-3o-F1i"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sRf-u5-g1N"/>
                     </view>
                 </viewController>
@@ -106,4 +209,5 @@
             <point key="canvasLocation" x="1625" y="134"/>
         </scene>
     </scenes>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

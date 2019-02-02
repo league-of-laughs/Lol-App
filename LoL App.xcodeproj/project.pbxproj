@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06F3F67322063034007103CF /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F3F67222063034007103CF /* Page2ViewController.swift */; };
 		4E4DDE7622052DE90000D2B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DDE7522052DE90000D2B6 /* AppDelegate.swift */; };
 		4E4DDE7822052DE90000D2B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DDE7722052DE90000D2B6 /* ViewController.swift */; };
 		4E4DDE7B22052DE90000D2B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4DDE7922052DE90000D2B6 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06F3F67222063034007103CF /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		0A3E30792FD779580872092F /* Pods-LoL App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL App.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoL App/Pods-LoL App.release.xcconfig"; sourceTree = "<group>"; };
 		4E4DDE7222052DE90000D2B6 /* LoL App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoL App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4DDE7522052DE90000D2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			children = (
 				4E4DDE7522052DE90000D2B6 /* AppDelegate.swift */,
 				4E4DDE7722052DE90000D2B6 /* ViewController.swift */,
+				06F3F67222063034007103CF /* Page2ViewController.swift */,
 				4E4DDE7922052DE90000D2B6 /* Main.storyboard */,
 				4E4DDE7C22052DEC0000D2B6 /* Assets.xcassets */,
 				4E4DDE7E22052DEC0000D2B6 /* LaunchScreen.storyboard */,
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E4DDE7822052DE90000D2B6 /* ViewController.swift in Sources */,
+				06F3F67322063034007103CF /* Page2ViewController.swift in Sources */,
 				4E4DDE7622052DE90000D2B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
