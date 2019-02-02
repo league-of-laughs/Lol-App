@@ -12,9 +12,11 @@
 		4E4DDE7B22052DE90000D2B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4DDE7922052DE90000D2B6 /* Main.storyboard */; };
 		4E4DDE7D22052DEC0000D2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4DDE7C22052DEC0000D2B6 /* Assets.xcassets */; };
 		4E4DDE8022052DEC0000D2B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4DDE7E22052DEC0000D2B6 /* LaunchScreen.storyboard */; };
+		A5573889B54C3D28DEEE57D4 /* Pods_LoL_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C4FF3869B9D6D7BBB8BB35 /* Pods_LoL_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A3E30792FD779580872092F /* Pods-LoL App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL App.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoL App/Pods-LoL App.release.xcconfig"; sourceTree = "<group>"; };
 		4E4DDE7222052DE90000D2B6 /* LoL App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoL App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4DDE7522052DE90000D2B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E4DDE7722052DE90000D2B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4E4DDE7C22052DEC0000D2B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E4DDE7F22052DEC0000D2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E4DDE8122052DEC0000D2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8C4FF3869B9D6D7BBB8BB35 /* Pods_LoL_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoL_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3352815D4BE5BC4FFDE688 /* Pods-LoL App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoL App/Pods-LoL App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5573889B54C3D28DEEE57D4 /* Pods_LoL_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C4A2A3FB99022BFA50DB4C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8C4FF3869B9D6D7BBB8BB35 /* Pods_LoL_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4E4DDE6922052DE90000D2B6 = {
 			isa = PBXGroup;
 			children = (
 				4E4DDE7422052DE90000D2B6 /* LoL App */,
 				4E4DDE7322052DE90000D2B6 /* Products */,
+				77084A9A4E259AA7E670AC97 /* Pods */,
+				4C4A2A3FB99022BFA50DB4C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "LoL App";
 			sourceTree = "<group>";
 		};
+		77084A9A4E259AA7E670AC97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA3352815D4BE5BC4FFDE688 /* Pods-LoL App.debug.xcconfig */,
+				0A3E30792FD779580872092F /* Pods-LoL App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E4DDE8422052DEC0000D2B6 /* Build configuration list for PBXNativeTarget "LoL App" */;
 			buildPhases = (
+				62D28AF236E865D39FB1044B /* [CP] Check Pods Manifest.lock */,
 				4E4DDE6E22052DE90000D2B6 /* Sources */,
 				4E4DDE6F22052DE90000D2B6 /* Frameworks */,
 				4E4DDE7022052DE90000D2B6 /* Resources */,
+				B0903AA5489AC9D75070D294 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62D28AF236E865D39FB1044B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoL App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0903AA5489AC9D75070D294 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LoL App/Pods-LoL App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoL App/Pods-LoL App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E4DDE6E22052DE90000D2B6 /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		4E4DDE8522052DEC0000D2B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA3352815D4BE5BC4FFDE688 /* Pods-LoL App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +374,7 @@
 		};
 		4E4DDE8622052DEC0000D2B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A3E30792FD779580872092F /* Pods-LoL App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

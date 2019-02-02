@@ -1,0 +1,6 @@
+framework module Pods_LoL_App {
+  umbrella header "Pods-LoL App-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   type = "1"
+   type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
@@ -10,27 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LoL App/ViewController.swift"
-            timestampString = "570824235.504248"
+            timestampString = "570824235.505375"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "buttonCicked()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LoL App/ViewController.swift"
-            timestampString = "570824235.504913"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "ViewController"
             landmarkType = "3">
             <Locations>
@@ -38,30 +22,30 @@
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "LoL_App.ViewController.submitButton.getter : Swift.Optional&lt;__C.UIButton&gt;"
+                  symbolName = "LoL_App.ViewController.nameTextBox.getter : Swift.Optional&lt;__C.UITextField&gt;"
                   moduleName = "LoL App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/carlosneira/Library/Mobile%20Documents/com~apple~CloudDocs/Hackathons/MangoHacks%202019/LoL%20App/LoL%20App/ViewController.swift"
-                  timestampString = "570824215.286684"
+                  timestampString = "570824215.30176"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
                   offsetFromSymbolStart = "108">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "LoL_App.ViewController.submitButton.setter : Swift.Optional&lt;__C.UIButton&gt;"
+                  symbolName = "LoL_App.ViewController.nameTextBox.setter : Swift.Optional&lt;__C.UITextField&gt;"
                   moduleName = "LoL App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/carlosneira/Library/Mobile%20Documents/com~apple~CloudDocs/Hackathons/MangoHacks%202019/LoL%20App/LoL%20App/ViewController.swift"
-                  timestampString = "570824215.290357"
+                  timestampString = "570824215.303473"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
                   offsetFromSymbolStart = "132">
                </Location>
                <Location
@@ -72,12 +56,12 @@
                   moduleName = "LoL App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/carlosneira/Library/Mobile%20Documents/com~apple~CloudDocs/Hackathons/MangoHacks%202019/LoL%20App/LoL%20App/ViewController.swift"
-                  timestampString = "570824215.292745"
+                  timestampString = "570824215.305156"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "156">
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "64">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -87,12 +71,12 @@
                   moduleName = "LoL App"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/carlosneira/Library/Mobile%20Documents/com~apple~CloudDocs/Hackathons/MangoHacks%202019/LoL%20App/LoL%20App/ViewController.swift"
-                  timestampString = "570824215.294768"
+                  timestampString = "570824215.306901"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "128">
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "52">
                </Location>
             </Locations>
          </BreakpointContent>
