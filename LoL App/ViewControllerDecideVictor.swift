@@ -26,6 +26,12 @@ class ViewControllerDecideVictor: UIViewController {
         
         button2.addTarget(self, action:#selector (self.buttonClicked2), for: .touchUpInside)
         
+        socket.on("gameWinner") {data, ack in
+            GlobalVariable.winnerName = data as? String;
+            self.performSegue(withIdentifier: "chickenDinner", sender: self)
+            print("GOING TO WINNNNNNNNER")
+        }
+
        
     }
     
@@ -37,6 +43,7 @@ class ViewControllerDecideVictor: UIViewController {
         let data = VoteData(name: nameV, vote: 1)
         
         socket.emit("mobile-voteMeme", "\(json)")
+        self.performSegue(withIdentifier: "waitRoom", sender: self)
         
     }
     

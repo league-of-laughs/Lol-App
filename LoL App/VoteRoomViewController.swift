@@ -9,21 +9,15 @@ import SocketIO
 import UIKit
 
 class VoteRoomViewController: UIViewController {
-    struct GlobalVariable{
-        static var winnerName2:String?
-    }
+    @IBOutlet var buttonFinish: UIButton!
+    
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        socket.on("mobile-startVoting") {data, ack in
-            self.performSegue(withIdentifier: "backVote", sender: self)
-        }
         
-        socket.on("gameWinner") {data, ack in
-            GlobalVariable.winnerName2 = data as? String;
-            self.performSegue(withIdentifier: "chickenDinner", sender: self)
-        }
+        
+        
         
     }
     
