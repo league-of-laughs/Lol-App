@@ -1,27 +1,19 @@
 //
-//  Page2ViewController.swift
+//  ViewControllerMeme.swift
 //  LoL App
 //
-//  Created by Jai Jethani on 2/2/19.
+//  Created by Carlos Neira on 2/2/19.
 //  Copyright © 2019 Neitek. All rights reserved.
 //
 
 import UIKit
 
-var overlayView = UIView()
-var activityIndicator = UIActivityIndicatorView()
-
-class Page2ViewController: UIViewController {
-    
+class ViewControllerMeme: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-      
-        
-    }
-   
-    
+
+        // Do any additional setup after loading the view.
     }
     
 
@@ -35,3 +27,4 @@ class Page2ViewController: UIViewController {
     }
     */
 
+}

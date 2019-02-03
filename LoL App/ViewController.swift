@@ -28,18 +28,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
         submitButton.widthAnchor.constraint(equalToConstant: 150.0).isActive = true
         submitButton.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         
-       
+        
         
         print("Loaded")
         socket.on(clientEvent: .connect) {data, ack in
             print("socket connected");
             //socket.emit("mobile-addPlayer", "Bob sagget");
         }
-        socket.on("ios") {data, ack in
+        socket.on("mobile-start") {data, ack in
             print("Conntect i guess");
         }
         
-         submitButton.addTarget(self, action:#selector (self.buttonClicked), for: .touchUpInside)
+        submitButton.addTarget(self, action:#selector (self.buttonClicked), for: .touchUpInside)
         
         
         socket.connect()
@@ -47,7 +47,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
     @objc func buttonClicked() {
         let userName = String(nameTextBox.text!);
         print("\(userName)");
