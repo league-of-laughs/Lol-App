@@ -34,6 +34,10 @@ class ViewControllerMakeMeme: UIViewController, UITextFieldDelegate {
         
         submitMeme.addTarget(self, action:#selector (self.buttonClicked), for: .touchUpInside)
         
+        socket.on("mobile-startVoting") {data, ack in
+            self.performSegue(withIdentifier: "toVote", sender: self)
+        }
+        
     }
     func downloadImage(with url: URL){
         URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -55,7 +59,6 @@ class ViewControllerMakeMeme: UIViewController, UITextFieldDelegate {
         
         socket.emit("mobile-uploadMeme", "\(data)")
         
-       
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

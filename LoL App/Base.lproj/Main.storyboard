@@ -51,7 +51,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="124-DB-YLX"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="start" id="124-DB-YLX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="League of Laughs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZz-tz-SFu">
@@ -189,35 +189,20 @@
                                     <constraint firstAttribute="width" constant="459" id="zfa-6t-gbs"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQf-gT-F1Q">
-                                <rect key="frame" x="200" y="499" width="77" height="33"/>
-                                <color key="backgroundColor" red="0.75589592589999999" green="1" blue="0.92789074189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <rect key="contentStretch" x="0.34999999999999998" y="0.0" width="1" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="LM1-rK-L5l"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
-                                <state key="normal" title="Join">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="bcz-1t-lm7" kind="presentation" id="eHd-TG-zXO"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Vs9-9N-4Sa" firstAttribute="top" secondItem="gQb-8B-c7m" secondAttribute="top" constant="97" id="3ek-Fg-9TI"/>
                             <constraint firstItem="s0c-iA-MfM" firstAttribute="leading" secondItem="WsY-Dy-ssn" secondAttribute="leading" id="5ku-jZ-hwK"/>
-                            <constraint firstItem="s0c-iA-MfM" firstAttribute="top" secondItem="UQf-gT-F1Q" secondAttribute="bottom" constant="20" id="Cnw-KA-7H5"/>
                             <constraint firstItem="Vs9-9N-4Sa" firstAttribute="centerX" secondItem="WsY-Dy-ssn" secondAttribute="centerX" id="HyQ-yz-8y9"/>
                             <constraint firstItem="s0c-iA-MfM" firstAttribute="bottom" secondItem="gQb-8B-c7m" secondAttribute="bottom" id="JSD-gg-3cj"/>
                             <constraint firstItem="Vs9-9N-4Sa" firstAttribute="leading" secondItem="gQb-8B-c7m" secondAttribute="leading" constant="57" id="gAS-Fq-g5l"/>
-                            <constraint firstItem="UQf-gT-F1Q" firstAttribute="leading" secondItem="gQb-8B-c7m" secondAttribute="leading" constant="223" id="qMN-aJ-QHY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gQb-8B-c7m"/>
                     </view>
+                    <connections>
+                        <segue destination="bcz-1t-lm7" kind="presentation" identifier="toMake" id="LIU-vB-5Sv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpV-Dj-iQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -251,7 +236,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cc3-3j-hqY">
-                                <rect key="frame" x="34" y="378" width="307" height="30"/>
+                                <rect key="frame" x="34" y="347" width="307" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -274,9 +259,6 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="hQn-u2-nJa" kind="presentation" id="dWh-t3-mv6"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -294,7 +276,7 @@
                             <constraint firstItem="i7f-tu-9VJ" firstAttribute="leading" secondItem="4rL-jJ-tL7" secondAttribute="leading" constant="37" id="YHx-Uy-RM3"/>
                             <constraint firstItem="1MH-yc-CW8" firstAttribute="leading" secondItem="4rL-jJ-tL7" secondAttribute="leading" constant="36" id="Ztx-u7-YIy"/>
                             <constraint firstItem="4rL-jJ-tL7" firstAttribute="bottom" secondItem="uvW-zI-xeA" secondAttribute="bottom" constant="93" id="d6g-IC-aP1"/>
-                            <constraint firstAttribute="bottom" secondItem="cc3-3j-hqY" secondAttribute="bottom" constant="259" id="das-qP-Sto"/>
+                            <constraint firstAttribute="bottom" secondItem="cc3-3j-hqY" secondAttribute="bottom" constant="290" id="das-qP-Sto"/>
                             <constraint firstItem="4rL-jJ-tL7" firstAttribute="trailing" secondItem="i7f-tu-9VJ" secondAttribute="trailing" constant="31" id="ehj-3q-9ux"/>
                             <constraint firstItem="1MH-yc-CW8" firstAttribute="top" secondItem="4rL-jJ-tL7" secondAttribute="top" constant="68" id="fsP-Y1-qrQ"/>
                             <constraint firstItem="nW2-4j-Dhl" firstAttribute="top" secondItem="1MH-yc-CW8" secondAttribute="bottom" constant="15" id="h5Y-gD-ffw"/>
@@ -307,6 +289,7 @@
                         <outlet property="memeImageBox" destination="nW2-4j-Dhl" id="zjs-0Q-dId"/>
                         <outlet property="submitMeme" destination="uvW-zI-xeA" id="ORG-zm-uhF"/>
                         <outlet property="topMemeComment" destination="i7f-tu-9VJ" id="sxB-8J-Yrk"/>
+                        <segue destination="hQn-u2-nJa" kind="presentation" id="mlB-TK-WfY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Lc-3m-kcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -383,16 +366,17 @@
                     <connections>
                         <outlet property="button1" destination="ldK-5i-TiQ" id="HMg-sN-9Hs"/>
                         <outlet property="button2" destination="o70-5B-94F" id="O8f-As-DVV"/>
+                        <segue destination="oaf-qz-a92" kind="presentation" identifier="moveWinner" id="LTz-Qy-uI4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCG-ap-g7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2486" y="134"/>
         </scene>
-        <!--View Controller Chicken Dinner-->
+        <!--Winner Winner View Controller-->
         <scene sceneID="g1W-oj-jm6">
             <objects>
-                <viewController id="oaf-qz-a92" customClass="ViewControllerChickenDinner" customModule="LoL_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oaf-qz-a92" customClass="WinnerWinnerViewController" customModule="LoL_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TZC-38-OKt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -433,6 +417,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d2N-eT-8Tj"/>
                     </view>
+                    <connections>
+                        <segue destination="PZs-Q9-wYj" kind="show" identifier="restart" id="VsC-6f-NqA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hl1-QT-ju4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -20,6 +20,7 @@
 		4E4DDE7B22052DE90000D2B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4DDE7922052DE90000D2B6 /* Main.storyboard */; };
 		4E4DDE7D22052DEC0000D2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4DDE7C22052DEC0000D2B6 /* Assets.xcassets */; };
 		4E4DDE8022052DEC0000D2B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4DDE7E22052DEC0000D2B6 /* LaunchScreen.storyboard */; };
+		4EC0E3952206F37800D5145F /* WinnerWinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC0E3942206F37800D5145F /* WinnerWinnerViewController.swift */; };
 		4ED1F48F2206A498002B0DE0 /* ViewControllerMeme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED1F48E2206A498002B0DE0 /* ViewControllerMeme.swift */; };
 		A5573889B54C3D28DEEE57D4 /* Pods_LoL_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C4FF3869B9D6D7BBB8BB35 /* Pods_LoL_App.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		4E4DDE7C22052DEC0000D2B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E4DDE7F22052DEC0000D2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E4DDE8122052DEC0000D2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EC0E3942206F37800D5145F /* WinnerWinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerWinnerViewController.swift; sourceTree = "<group>"; };
 		4ED1F48E2206A498002B0DE0 /* ViewControllerMeme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMeme.swift; sourceTree = "<group>"; };
 		A8C4FF3869B9D6D7BBB8BB35 /* Pods_LoL_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoL_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3352815D4BE5BC4FFDE688 /* Pods-LoL App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoL App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoL App/Pods-LoL App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				4ED1F48E2206A498002B0DE0 /* ViewControllerMeme.swift */,
 				06F3F67222063034007103CF /* Page2ViewController.swift */,
 				4E4DDE7922052DE90000D2B6 /* Main.storyboard */,
+				4EC0E3942206F37800D5145F /* WinnerWinnerViewController.swift */,
 				065329AC2206A9EA00AB0ABC /* ViewControllerChickenDinner.swift */,
 				065329AA2206A9D400AB0ABC /* ViewControllerDecideVictor.swift */,
 				065329A82206A92D00AB0ABC /* ViewControllerMakeMeme.swift */,
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EC0E3952206F37800D5145F /* WinnerWinnerViewController.swift in Sources */,
 				065329AB2206A9D400AB0ABC /* ViewControllerDecideVictor.swift in Sources */,
 				4E4DDE7822052DE90000D2B6 /* ViewController.swift in Sources */,
 				065329AD2206A9EA00AB0ABC /* ViewControllerChickenDinner.swift in Sources */,

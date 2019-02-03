@@ -16,6 +16,8 @@ class Page2ViewController: UIViewController {
         static var imageUrl: URL?
     }
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,10 +27,9 @@ class Page2ViewController: UIViewController {
         }
         
         socket.on("mobile-start") {data, ack in
-            print("Were getting shit");
-            print("\(data)")
             GlobalVariable.imageUrl = URL(string: "\(data)")!
-            print("Were getting shit 2 \(String(describing: GlobalVariable.imageUrl))");
+            self.performSegue(withIdentifier: "toMake", sender: self)
+
         }
         
     }
