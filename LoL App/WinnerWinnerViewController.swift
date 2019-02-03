@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import SocketIO
 
 class WinnerWinnerViewController: UIViewController {
 
+    @IBOutlet var labelWinner: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.labelWinner.text = "\(String(describing: ViewControllerDecideVictor.GlobalVariable.winnerName))"
+        
+        socket.on("restart") {data, ack in
+            self.performSegue(withIdentifier: "restart", sender: self)
+        }
+        
     }
     
 

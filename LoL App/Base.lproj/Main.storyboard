@@ -388,36 +388,42 @@
                                     <constraint firstAttribute="height" constant="115" id="lYm-bm-Sxj"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Has won!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daR-Xu-4BV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="IS MEME LORD!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daR-Xu-4BV">
                                 <rect key="frame" x="36" y="432" width="302" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="107" id="FgY-SG-usI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="29"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VI0-k5-wtH">
-                                <rect key="frame" x="67" y="230" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="qVK-LZ-OsN"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJg-O1-OcZ">
+                                <rect key="frame" x="166" y="254" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mike" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayq-f9-FWO">
+                                <rect key="frame" x="131" y="305" width="123" height="62"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="55"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="daR-Xu-4BV" firstAttribute="top" secondItem="Ayq-f9-FWO" secondAttribute="bottom" constant="65" id="Bi5-Lt-dqI"/>
                             <constraint firstItem="d2N-eT-8Tj" firstAttribute="bottom" secondItem="daR-Xu-4BV" secondAttribute="bottom" constant="128" id="CKi-be-hHC"/>
                             <constraint firstItem="3KZ-zs-6T5" firstAttribute="leading" secondItem="TZC-38-OKt" secondAttribute="leading" id="Hjk-zk-VB9"/>
-                            <constraint firstItem="VI0-k5-wtH" firstAttribute="centerX" secondItem="TZC-38-OKt" secondAttribute="centerX" id="QYE-5D-PHP"/>
-                            <constraint firstItem="daR-Xu-4BV" firstAttribute="top" secondItem="VI0-k5-wtH" secondAttribute="bottom" constant="74" id="abd-aL-be3"/>
-                            <constraint firstItem="VI0-k5-wtH" firstAttribute="leading" secondItem="d2N-eT-8Tj" secondAttribute="leading" constant="67" id="c4g-A1-PfO"/>
                             <constraint firstItem="3KZ-zs-6T5" firstAttribute="top" secondItem="TZC-38-OKt" secondAttribute="top" id="dMa-QK-L3T"/>
                             <constraint firstItem="daR-Xu-4BV" firstAttribute="leading" secondItem="d2N-eT-8Tj" secondAttribute="leading" constant="36" id="jfb-tf-8yb"/>
-                            <constraint firstItem="VI0-k5-wtH" firstAttribute="centerX" secondItem="daR-Xu-4BV" secondAttribute="centerX" id="ll8-j2-SaD"/>
+                            <constraint firstItem="Ayq-f9-FWO" firstAttribute="leading" secondItem="d2N-eT-8Tj" secondAttribute="leading" constant="131" id="z58-hw-BNp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d2N-eT-8Tj"/>
                     </view>
                     <connections>
+                        <outlet property="labelWiiner" destination="Ayq-f9-FWO" id="Sgi-jh-C1H"/>
                         <segue destination="PZs-Q9-wYj" kind="show" identifier="restart" id="VsC-6f-NqA"/>
                     </connections>
                 </viewController>

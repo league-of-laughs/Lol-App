@@ -13,9 +13,9 @@ let manager = SocketManager(socketURL: URL(string: "https://73179f88.ngrok.io/")
 let socket = manager.defaultSocket
 
 class ViewController: UIViewController, UITextFieldDelegate {
-    
+    var newName = " "
     struct GlobalVariable{
-        static var userName:String?
+        static var userName:String!
     }
     
     @IBOutlet var nameTextBox: UITextField!
@@ -53,9 +53,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc func buttonClicked() {
+        
         GlobalVariable.userName = String(nameTextBox.text!);
-        print("");
-        socket.emit("mobile-addPlayer", "\(String(describing: GlobalVariable.userName))");
+        newName = String(GlobalVariable.userName!);
+        /*
+        GlobalVariable.userName =  String(nameTextBox.text!);
+        print("\(String(describing: GlobalVariable.userName))");
+ */
+        socket.emit("mobile-addPlayer", "\(newName)");
         
     }
     

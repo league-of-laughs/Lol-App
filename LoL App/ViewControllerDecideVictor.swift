@@ -10,6 +10,10 @@ import UIKit
 import SocketIO
 var datasVote = [VoteData]()
 class ViewControllerDecideVictor: UIViewController {
+    
+    struct GlobalVariable{
+        static var winnerName:String?
+    }
 
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
@@ -21,6 +25,11 @@ class ViewControllerDecideVictor: UIViewController {
         
         
         button2.addTarget(self, action:#selector (self.buttonClicked2), for: .touchUpInside)
+        
+        socket.on("gameWinner") {data, ack in
+            GlobalVariable.winnerName = data as? String;
+            self.performSegue(withIdentifier: "moveWinner", sender: self)
+        }
     }
     
     
