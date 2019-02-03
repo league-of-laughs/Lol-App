@@ -5,19 +5,31 @@
 //  Created by Jai Jethani on 2/2/19.
 //  Copyright © 2019 Neitek. All rights reserved.
 //
-
+import SocketIO
 import UIKit
 
 var overlayView = UIView()
 var activityIndicator = UIActivityIndicatorView()
 
 class Page2ViewController: UIViewController {
-    
+    struct GlobalVariable{
+        static var imageUrl: URL?
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
+        socket.on(clientEvent: .connect) {data, ack in
+            print("socket connected");
+            //socket.emit("mobile-addPlayer", "Bob sagget");
+        }
+        
+        socket.on("mobile-start") {data, ack in
+            print("Were getting shit");
+            print("\(data)")
+            GlobalVariable.imageUrl = URL(string: "\(data)")!
+            print("Were getting shit 2 \(String(describing: GlobalVariable.imageUrl))");
+        }
         
     }
    

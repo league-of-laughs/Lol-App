@@ -302,10 +302,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4rL-jJ-tL7"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomMemeComment" destination="cc3-3j-hqY" id="tBB-ZH-3NA"/>
+                        <outlet property="memeImageBox" destination="nW2-4j-Dhl" id="zjs-0Q-dId"/>
+                        <outlet property="submitMeme" destination="uvW-zI-xeA" id="ORG-zm-uhF"/>
+                        <outlet property="topMemeComment" destination="i7f-tu-9VJ" id="sxB-8J-Yrk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Lc-3m-kcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718" y="134"/>
+            <point key="canvasLocation" x="1706" y="140"/>
         </scene>
         <!--View Controller Decide Victor-->
         <scene sceneID="83q-vl-voA">
@@ -315,13 +321,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="md_5ab0afa3d705a.png" translatesAutoresizingMaskIntoConstraints="NO" id="jbp-B5-6Rq">
-                                <rect key="frame" x="0.0" y="552" width="459" height="115"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="115" id="JuY-LE-rOP"/>
-                                    <constraint firstAttribute="width" constant="459" id="f60-dA-Wyw"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DECIDE THE VICTOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daq-IF-7x9">
                                 <rect key="frame" x="36" y="67" width="302" height="107"/>
                                 <constraints>
@@ -344,9 +343,6 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="oaf-qz-a92" kind="presentation" id="IrQ-Se-ojq"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o70-5B-94F">
                                 <rect key="frame" x="213" y="275" width="126" height="33"/>
@@ -360,10 +356,14 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="oaf-qz-a92" kind="presentation" id="INW-HU-XJh"/>
-                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="md_5ab0afa3d705a.png" translatesAutoresizingMaskIntoConstraints="NO" id="jbp-B5-6Rq">
+                                <rect key="frame" x="-10" y="552" width="459" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="JuY-LE-rOP"/>
+                                    <constraint firstAttribute="width" constant="459" id="f60-dA-Wyw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -380,6 +380,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bpk-TT-RT4"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="ldK-5i-TiQ" id="HMg-sN-9Hs"/>
+                        <outlet property="button2" destination="o70-5B-94F" id="O8f-As-DVV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCG-ap-g7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -438,8 +442,5 @@
     <resources>
         <image name="md_5ab0afa3d705a.png" width="640" height="640"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="IrQ-Se-ojq"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

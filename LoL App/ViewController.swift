@@ -9,10 +9,14 @@
 import UIKit
 import SocketIO
 
-let manager = SocketManager(socketURL: URL(string: "https://af7af856.ngrok.io/")!, config: [.log(true), .compress])
+let manager = SocketManager(socketURL: URL(string: "https://73179f88.ngrok.io/")!, config: [.log(true), .compress])
 let socket = manager.defaultSocket
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    
+    struct GlobalVariable{
+        static var userName:String?
+    }
     
     @IBOutlet var nameTextBox: UITextField!
     @IBOutlet var submitButton: UIButton!
@@ -49,9 +53,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @objc func buttonClicked() {
-        let userName = String(nameTextBox.text!);
-        print("\(userName)");
-        socket.emit("mobile-addPlayer", "\(userName)");
+        GlobalVariable.userName = String(nameTextBox.text!);
+        print("");
+        socket.emit("mobile-addPlayer", "\(String(describing: GlobalVariable.userName))");
         
     }
     
