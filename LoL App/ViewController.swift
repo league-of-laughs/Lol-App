@@ -9,7 +9,7 @@
 import UIKit
 import SocketIO
 
-let manager = SocketManager(socketURL: URL(string: "https://73179f88.ngrok.io/")!, config: [.log(true), .compress])
+let manager = SocketManager(socketURL: URL(string: "https://da266d20.ngrok.io/")!, config: [.log(true), .compress])
 let socket = manager.defaultSocket
 
 class ViewController: UIViewController, UITextFieldDelegate {

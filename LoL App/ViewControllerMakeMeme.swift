@@ -54,10 +54,18 @@ class ViewControllerMakeMeme: UIViewController, UITextFieldDelegate {
     @objc func buttonClicked() {
         let topC = String(topMemeComment.text!);
         let bottomC = String(bottomMemeComment.text!);
-        let nameO = String(describing: ViewController.GlobalVariable.userName)
-        let data = Data(name: nameO, topText: topC, bottomText: bottomC)
+        let nameO = String(ViewController.GlobalVariable.userName!);
+        let jsonString = "{\"name\":\"\(nameO)\",\"topText\":\"\(topC)\",\"bottomText\":\"\(bottomC)\"}"
+        let data2: [String: Any] = [
+            "topText":"\(topC)",
+            "buttomText":"\(bottomC)",
+            "name":"\(nameO)",
+        ]
         
-        socket.emit("mobile-uploadMeme", "\(data)")
+        
+        let data = Data (name: nameO, topText: topC, bottomText: bottomC)
+        
+        socket.emit("mobile-uploadMeme", "\(jsonString)")
         
     }
     

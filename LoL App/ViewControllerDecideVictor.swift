@@ -26,30 +26,29 @@ class ViewControllerDecideVictor: UIViewController {
         
         button2.addTarget(self, action:#selector (self.buttonClicked2), for: .touchUpInside)
         
-        socket.on("gameWinner") {data, ack in
-            GlobalVariable.winnerName = data as? String;
-            self.performSegue(withIdentifier: "moveWinner", sender: self)
-        }
+       
     }
     
     
     @objc func buttonClicked1() {
         
-        let nameV = String(describing: ViewController.GlobalVariable.userName)
-        
+        let nameV = String(ViewController.GlobalVariable.userName!);
+        let json = "{\"name\":\"\(nameV)\",\"number\":1}"
         let data = VoteData(name: nameV, vote: 1)
         
-        socket.emit("mobile-voteMeme", "\(data)")
+        socket.emit("mobile-voteMeme", "\(json)")
         
     }
     
     @objc func buttonClicked2() {
         
-        let nameV = String(describing: ViewController.GlobalVariable.userName)
-        
+        let nameV = String(ViewController.GlobalVariable.userName!);
+        print("\(nameV)")
+        let json = "{\"name\":\"\(nameV)\",\"number\":2}"
         let data = VoteData(name: nameV, vote: 2)
         
-        socket.emit("mobile-voteMeme", "\(data)")
+        socket.emit("mobile-voteMeme", "\(json)")
+        self.performSegue(withIdentifier: "waitRoom", sender: self)
         
     }
     

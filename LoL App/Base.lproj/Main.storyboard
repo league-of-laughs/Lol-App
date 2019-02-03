@@ -54,7 +54,7 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" identifier="start" id="124-DB-YLX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="League of Laughs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZz-tz-SFu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="League of Memes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZz-tz-SFu">
                                 <rect key="frame" x="16" y="103" width="349" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="146" id="pjV-ob-eR5"/>
@@ -229,13 +229,13 @@
                                     <constraint firstAttribute="height" constant="216" id="AzI-Z1-jin"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i7f-tu-9VJ">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i7f-tu-9VJ">
                                 <rect key="frame" x="37" y="223" width="307" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cc3-3j-hqY">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cc3-3j-hqY">
                                 <rect key="frame" x="34" y="347" width="307" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -280,6 +280,7 @@
                             <constraint firstItem="4rL-jJ-tL7" firstAttribute="trailing" secondItem="i7f-tu-9VJ" secondAttribute="trailing" constant="31" id="ehj-3q-9ux"/>
                             <constraint firstItem="1MH-yc-CW8" firstAttribute="top" secondItem="4rL-jJ-tL7" secondAttribute="top" constant="68" id="fsP-Y1-qrQ"/>
                             <constraint firstItem="nW2-4j-Dhl" firstAttribute="top" secondItem="1MH-yc-CW8" secondAttribute="bottom" constant="15" id="h5Y-gD-ffw"/>
+                            <constraint firstItem="cc3-3j-hqY" firstAttribute="top" secondItem="i7f-tu-9VJ" secondAttribute="bottom" constant="94" id="h8Q-D8-g69"/>
                             <constraint firstItem="nW2-4j-Dhl" firstAttribute="leading" secondItem="h7i-Au-zTZ" secondAttribute="leadingMargin" id="tdw-VL-Ebh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4rL-jJ-tL7"/>
@@ -289,7 +290,7 @@
                         <outlet property="memeImageBox" destination="nW2-4j-Dhl" id="zjs-0Q-dId"/>
                         <outlet property="submitMeme" destination="uvW-zI-xeA" id="ORG-zm-uhF"/>
                         <outlet property="topMemeComment" destination="i7f-tu-9VJ" id="sxB-8J-Yrk"/>
-                        <segue destination="hQn-u2-nJa" kind="presentation" id="mlB-TK-WfY"/>
+                        <segue destination="hQn-u2-nJa" kind="presentation" identifier="toVote" id="mlB-TK-WfY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Lc-3m-kcz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -367,11 +368,56 @@
                         <outlet property="button1" destination="ldK-5i-TiQ" id="HMg-sN-9Hs"/>
                         <outlet property="button2" destination="o70-5B-94F" id="O8f-As-DVV"/>
                         <segue destination="oaf-qz-a92" kind="presentation" identifier="moveWinner" id="LTz-Qy-uI4"/>
+                        <segue destination="QX3-XE-DjO" kind="show" identifier="waitRoom" id="QnD-Oa-Oaj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCG-ap-g7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2486" y="134"/>
+        </scene>
+        <!--Vote Room View Controller-->
+        <scene sceneID="Joh-kU-4xW">
+            <objects>
+                <viewController id="QX3-XE-DjO" customClass="VoteRoomViewController" customModule="LoL_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bru-aA-Tuv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="md_5ab0afa3d705a.png" translatesAutoresizingMaskIntoConstraints="NO" id="pJ6-52-W00">
+                                <rect key="frame" x="-42" y="552" width="459" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="459" id="Lqa-MV-4hS"/>
+                                    <constraint firstAttribute="height" constant="115" id="yNg-ee-NGs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Challenger Approaches..?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZb-FD-QwQ">
+                                <rect key="frame" x="0.0" y="152" width="375" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="pL4-dn-0dR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pJ6-52-W00" firstAttribute="bottom" secondItem="NbY-tB-ZzM" secondAttribute="bottom" id="6Wu-IT-hwf"/>
+                            <constraint firstItem="YZb-FD-QwQ" firstAttribute="leading" secondItem="Bru-aA-Tuv" secondAttribute="leading" id="6y8-cG-sA4"/>
+                            <constraint firstItem="YZb-FD-QwQ" firstAttribute="centerX" secondItem="pJ6-52-W00" secondAttribute="centerX" id="EUu-vD-sYH"/>
+                            <constraint firstItem="YZb-FD-QwQ" firstAttribute="top" secondItem="NbY-tB-ZzM" secondAttribute="top" constant="132" id="Wzh-hk-itP"/>
+                            <constraint firstItem="pJ6-52-W00" firstAttribute="centerX" secondItem="Bru-aA-Tuv" secondAttribute="centerX" id="fsf-WG-aml"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NbY-tB-ZzM"/>
+                    </view>
+                    <connections>
+                        <segue destination="hQn-u2-nJa" kind="presentation" identifier="backVote" id="QLN-Tn-WM3"/>
+                        <segue destination="oaf-qz-a92" kind="presentation" identifier="chickenDinner" id="5H0-6t-EEP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boG-4U-BQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2080.8000000000002" y="1047.5262368815593"/>
         </scene>
         <!--Winner Winner View Controller-->
         <scene sceneID="g1W-oj-jm6">
@@ -435,5 +481,9 @@
     <resources>
         <image name="md_5ab0afa3d705a.png" width="640" height="640"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LTz-Qy-uI4"/>
+        <segue reference="mlB-TK-WfY"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
