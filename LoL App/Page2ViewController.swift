@@ -14,14 +14,14 @@ var activityIndicator = UIActivityIndicatorView()
 class Page2ViewController: UIViewController {
 
     @IBOutlet weak var Spinner: UIActivityIndicatorView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         Spinner.startAnimating()
-    
+        
     }
-    
+   
     
     }
     
